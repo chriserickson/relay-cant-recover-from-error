@@ -1,0 +1,19 @@
+type Viewer {
+  accounts: AccountConnection
+}
+type AccountConnection {
+  edges: [AccountEdge!]!
+}
+
+type AccountEdge {
+  node: Account
+}
+
+type Account {
+  id: ID!
+  uuid: String!
+}
+
+type Query {
+  viewer: Viewer
+}

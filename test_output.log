@@ -1,0 +1,216 @@
+yarn run v1.9.2
+$ node scripts/test.js --watchAll=false
+  console.log
+    Component render
+
+      at Component (src/TestRecoverError.test.tsx:13:13)
+
+  console.log
+    Suspended
+
+      at Component (src/TestRecoverError.test.tsx:37:17)
+
+  console.log
+    Resolving operation with nulls
+
+      at src/TestRecoverError.test.tsx:138:21
+
+  console.log
+    Component render
+
+      at Component (src/TestRecoverError.test.tsx:13:13)
+
+  console.log
+    Suspense resolved {"fetchKey":0,"viewer":{"accounts":{"edges":[{"node":{"uuid":1}},{"node":null}]}}}
+
+      at Component (src/TestRecoverError.test.tsx:41:13)
+
+  console.log
+    Component render
+
+      at Component (src/TestRecoverError.test.tsx:13:13)
+
+  console.log
+    Suspense resolved {"fetchKey":0,"viewer":{"accounts":{"edges":[{"node":{"uuid":1}},{"node":null}]}}}
+
+      at Component (src/TestRecoverError.test.tsx:41:13)
+
+  console.error
+    Error: Uncaught [TypeError: Cannot read property 'uuid' of null]
+        at reportException (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:62:24)
+        at innerInvokeEventListeners (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:333:9)
+        at invokeEventListeners (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at beginWork$1 (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:23964:7)
+        at performUnitOfWork (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:22779:12) TypeError: Cannot read property 'uuid' of null
+        at map (/Users/chriserickson/source/local/relay-refresh-queries-on-error/src/TestRecoverError.test.tsx:52:33)
+        at Array.map (<anonymous>)
+        at Component (/Users/chriserickson/source/local/relay-refresh-queries-on-error/src/TestRecoverError.test.tsx:46:39)
+        at renderWithHooks (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:14985:18)
+        at mountIndeterminateComponent (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:17811:13)
+        at beginWork (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:19049:16)
+        at HTMLUnknownElement.callCallback (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+        at HTMLUnknownElement.callTheUserObjectsOperation (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:318:25)
+        at invokeEventListeners (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at beginWork$1 (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:23964:7)
+        at performUnitOfWork (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:22779:12)
+        at workLoopSync (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:22707:5)
+        at renderRootSync (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:22670:7)
+        at performSyncWorkOnRoot (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:22293:18)
+        at /Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:11327:26
+        at unstable_runWithPriority (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/scheduler/cjs/scheduler.development.js:468:12)
+        at runWithPriority$1 (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+        at flushSyncCallbackQueueImpl (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:11322:9)
+        at workLoop (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/scheduler/cjs/scheduler.development.js:417:34)
+        at flushWork (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/scheduler/cjs/scheduler.development.js:390:14)
+        at _flushCallback (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/scheduler/cjs/scheduler.development.js:55:9)
+        at Timeout.task [as _onTimeout] (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/browser/Window.js:391:19)
+        at listOnTimeout (internal/timers.js:531:17)
+        at processTimers (internal/timers.js:475:7)
+
+      at CustomConsole.error (node_modules/@testing-library/react/dist/act-compat.js:55:34)
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:333:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+
+  console.error
+    The above error occurred in the <Component> component:
+    
+        at Component (/Users/chriserickson/source/local/relay-refresh-queries-on-error/src/TestRecoverError.test.tsx:15:24)
+        at Suspense
+        at ErrorBoundary (/Users/chriserickson/source/local/relay-refresh-queries-on-error/src/TestRecoverError.test.tsx:89:45)
+        at RelayEnvironmentProvider (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-relay/lib/relay-hooks/RelayEnvironmentProvider.js:21:24)
+        at Fixture (/Users/chriserickson/source/local/relay-refresh-queries-on-error/src/TestRecoverError.test.tsx:113:18)
+    
+    React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+
+      at CustomConsole.error (node_modules/@testing-library/react/dist/act-compat.js:55:34)
+      at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:20085:23)
+      at ErrorBoundary.update.payload (node_modules/react-dom/cjs/react-dom.development.js:20133:7)
+      at getStateFromUpdate (node_modules/react-dom/cjs/react-dom.development.js:12102:35)
+      at processUpdateQueue (node_modules/react-dom/cjs/react-dom.development.js:12250:20)
+      at updateClassInstance (node_modules/react-dom/cjs/react-dom.development.js:13013:3)
+      at updateClassComponent (node_modules/react-dom/cjs/react-dom.development.js:17432:20)
+
+  console.log
+    Retry called
+
+      at handleRetry (src/TestRecoverError.test.tsx:67:17)
+
+  console.log
+    Component render
+
+      at Component (src/TestRecoverError.test.tsx:13:13)
+
+  console.log
+    Suspended
+
+      at Component (src/TestRecoverError.test.tsx:37:17)
+
+  console.log
+    Resolving operation without nulls
+
+      at src/TestRecoverError.test.tsx:156:21
+
+  console.log
+    Component render
+
+      at Component (src/TestRecoverError.test.tsx:13:13)
+
+  console.log
+    Suspense resolved {"fetchKey":1,"viewer":{"accounts":{"edges":[{"node":{"uuid":1}},{"node":null}]}}}
+
+      at Component (src/TestRecoverError.test.tsx:41:13)
+
+  console.log
+    Component render
+
+      at Component (src/TestRecoverError.test.tsx:13:13)
+
+  console.log
+    Suspense resolved {"fetchKey":1,"viewer":{"accounts":{"edges":[{"node":{"uuid":1}},{"node":null}]}}}
+
+      at Component (src/TestRecoverError.test.tsx:41:13)
+
+  console.error
+    Error: Uncaught [TypeError: Cannot read property 'uuid' of null]
+        at reportException (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:62:24)
+        at innerInvokeEventListeners (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:333:9)
+        at invokeEventListeners (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at beginWork$1 (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:23964:7)
+        at performUnitOfWork (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:22779:12) TypeError: Cannot read property 'uuid' of null
+        at map (/Users/chriserickson/source/local/relay-refresh-queries-on-error/src/TestRecoverError.test.tsx:52:33)
+        at Array.map (<anonymous>)
+        at Component (/Users/chriserickson/source/local/relay-refresh-queries-on-error/src/TestRecoverError.test.tsx:46:39)
+        at renderWithHooks (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:14985:18)
+        at mountIndeterminateComponent (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:17811:13)
+        at beginWork (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:19049:16)
+        at HTMLUnknownElement.callCallback (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+        at HTMLUnknownElement.callTheUserObjectsOperation (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:318:25)
+        at invokeEventListeners (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at beginWork$1 (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:23964:7)
+        at performUnitOfWork (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:22779:12)
+        at workLoopSync (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:22707:5)
+        at renderRootSync (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:22670:7)
+        at performSyncWorkOnRoot (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:22293:18)
+        at /Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:11327:26
+        at unstable_runWithPriority (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/scheduler/cjs/scheduler.development.js:468:12)
+        at runWithPriority$1 (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+        at flushSyncCallbackQueueImpl (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-dom/cjs/react-dom.development.js:11322:9)
+        at workLoop (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/scheduler/cjs/scheduler.development.js:417:34)
+        at flushWork (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/scheduler/cjs/scheduler.development.js:390:14)
+        at _flushCallback (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/scheduler/cjs/scheduler.development.js:55:9)
+        at Timeout.task [as _onTimeout] (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/jsdom/lib/jsdom/browser/Window.js:391:19)
+        at listOnTimeout (internal/timers.js:531:17)
+        at processTimers (internal/timers.js:475:7)
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:333:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+
+  console.error
+    The above error occurred in the <Component> component:
+    
+        at Component (/Users/chriserickson/source/local/relay-refresh-queries-on-error/src/TestRecoverError.test.tsx:15:24)
+        at Suspense
+        at ErrorBoundary (/Users/chriserickson/source/local/relay-refresh-queries-on-error/src/TestRecoverError.test.tsx:89:45)
+        at RelayEnvironmentProvider (/Users/chriserickson/source/local/relay-refresh-queries-on-error/node_modules/react-relay/lib/relay-hooks/RelayEnvironmentProvider.js:21:24)
+        at Fixture (/Users/chriserickson/source/local/relay-refresh-queries-on-error/src/TestRecoverError.test.tsx:113:18)
+    
+    React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+
+      at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:20085:23)
+      at ErrorBoundary.update.payload (node_modules/react-dom/cjs/react-dom.development.js:20133:7)
+      at getStateFromUpdate (node_modules/react-dom/cjs/react-dom.development.js:12102:35)
+      at processUpdateQueue (node_modules/react-dom/cjs/react-dom.development.js:12250:20)
+      at updateClassInstance (node_modules/react-dom/cjs/react-dom.development.js:13013:3)
+      at updateClassComponent (node_modules/react-dom/cjs/react-dom.development.js:17432:20)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19073:16)
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
